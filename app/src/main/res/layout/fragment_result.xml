@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/headbar" />
+
+
+        <LinearLayout
+            android:id="@+id/llResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.bupc.checkme.core.widget.FontedTextView
+                android:id="@+id/ftvScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0/3"
+                android:textSize="46sp" />
+
+            <com.bupc.checkme.core.widget.FontedTextView
+                android:id="@+id/ftvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Complete"
+                android:padding="5dp"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="13dp"
+            android:layout_marginEnd="14dp"
+            android:background="@color/colorPrimary"
+            android:text="Home"
+            android:textColor="@color/text_default" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
